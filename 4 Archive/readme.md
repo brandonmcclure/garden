@@ -1,0 +1,1 @@
+The archive is where I move all the other notes when I think they are no longer actionable. Because I am using git I am also very comfortable with deleting notes because I still retain a history of them which I can recover if I ever needed to.
