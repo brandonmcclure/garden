@@ -1,22 +1,39 @@
+---
+Next Action Date: 2025-01-01
+Scope: Unknown
+Status: Needs Triaged
+---
 # <% tp.file.title %>
 
-#project
+<%* tR += "#" %>project/<% tp.file.title.replace(/ /g, "_").replace(/\./g, "_").toLowerCase() %>
 
-## Tasks defined for this project
+## Next Steps
 
-```dataviewjs
-const query = `
+
+---
+## Issues
+
+## Risks
+
+## Assumptions
+
+## Dependencies
+
+---
+## Resources
+### Tasks with this project tag
+
+```tasks
 not done
-path includes ${dv.current().file.path}
-# you can add any number of extra Tasks instructions, for example:
-group by heading
-`;
-
-dv.paragraph('```tasks\n' + query + '\n```');
+path does not include Reminders
+tag include <%* tR += "#" %>project/<% tp.file.title.replace(/ /g, "_").replace(/\./g, "_").toLowerCase() %>
+group by priority
 ```
 
-## Related Notes
+### Notes with this tag
 
 ```query
-tag:#project <% tp.file.title %>
+tag:<%* tR += "#" %>project/<% tp.file.title.replace(/ /g, "_").replace(/\./g, "_").toLowerCase() %>
 ```
+
+## Archives
